@@ -13,6 +13,7 @@ class Graph:
     def DFSUtil(self, v, visited):
  
         visited[v]= True
+
         print (v)
  
         for i in self.graph[v]:
@@ -44,6 +45,5 @@ g.addEdge(2, 3)
 g.addEdge(3, 3)
  
 print ("Following is Depth First Traversal")
+
 g.DFS()
-            
-    

@@ -2,10 +2,8 @@ def aStarAlgo(start_node,stop_node):
 
     open_set=set(start_node)
     closed_set=set()
-    g={}
-    parents={}
-    g[start_node]=0
-    parents[start_node]=start_node
+    g={start_node:0}
+    parents={start_node:start_node}
 
     while len(open_set)>0:
 
@@ -60,6 +58,7 @@ def aStarAlgo(start_node,stop_node):
 
             path.append(start_node)
             path.reverse()
+
             print('path found:{}'.format(path))
 
             return path
